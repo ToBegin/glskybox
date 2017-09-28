@@ -101,7 +101,7 @@ class Projector(object):
         start = time.time()
 
         directions = Projector.DIRECTIONS
-        for name, vec in directions.iteritems():
+        for name, vec in directions.items():
             buf = self.rotate(*vec)
             image = Image.frombytes(mode="RGB", size=(self.w, self.h), data=buf)
             image_name = path.join(subdir, "%s.jpg" % name)
@@ -115,7 +115,7 @@ class Projector(object):
         glutInit()
         glutInitDisplayMode(GLUT_RGB | GLUT_DOUBLE)
         glutInitWindowSize(self.w, self.h)
-        glutCreateWindow("glskybox renderer")
+        glutCreateWindow(b"glskybox renderer")
         glutHideWindow()
 
         glClearColor(0., 0., 0., 0.)

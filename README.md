@@ -24,7 +24,9 @@ A simple python tool for converting skysphere texture to skybox.
                             destination path
       -s SIZE, --size SIZE  output image size
       -f, --overwrite       overwrite existing output
-
+      
+    for python 3.5 win64, add a whl install file
+        pip install PyOpenGL-3.1.1-cp35-cp35m-win_amd64.whl
 Example:
 
 Use a photo taken by [PhotoSphere](https://www.google.com/maps/streetview/publish/) app, then run:
